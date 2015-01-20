@@ -9,7 +9,7 @@ var HomeView = React.createClass({
     return (
       <div>
       <p className="centerText">
-      <img src = "../wedding/img/save_the_date.png" height="500"/></p>
+      <img src = "../wedding/img/save_the_date.jpg" height="500"/></p>
       <h1>SAVE THE DATE</h1>
       <h2>Saturday, July 18<br />
       San Mateo, CA</h2>
