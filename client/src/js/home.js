@@ -13,7 +13,7 @@ var HomeView = React.createClass({
       <h1>SAVE THE DATE</h1>
       <h2>Saturday, July 18<br />
       San Mateo, CA</h2>
- 
+
       <p className="centerText">Toby and Ambie are getting married!<br />
       Website coming soon.</p>
       </div>
