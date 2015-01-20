@@ -9,13 +9,13 @@ var RSVPView = require('./rsvp.js');
 // This is your main class
 var AppViewController = React.createClass({
   getInitialState: function() {
-    return {location: window.location.hash};
+    return {hash: window.location.hash};
   },
 
   // Navbar Delegate
   navDidClick: function(tag) {
     document.location.hash = tag;
-    this.setState({location: tag});
+    this.setState({hash: tag});
   },
 
   route: function(hash) {
@@ -35,13 +35,23 @@ var AppViewController = React.createClass({
     return (
       <div className="appViewController">
         <NavigationView delegate={this}/> 
-        {this.route(this.state.location)}
+        {this.route(this.state.hash)}
       </div>
     );
     /*jshint ignore:end */
   },
 
   componentDidMount: function() {
+    var self = this;
+    var history = [];
+
+    window.onhashchange = function() {
+      var hash = document.location.hash;
+
+      if (self.state.hash != hash) {
+        self.setState({hash: hash});
+      }
+    };
   }
 });
 
