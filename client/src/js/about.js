@@ -28,6 +28,7 @@ var AboutView = React.createClass({
   },
 
   componentDidMount: function() {
+    imageSlider.reload();
   }
 });
 module.exports = AboutView;
