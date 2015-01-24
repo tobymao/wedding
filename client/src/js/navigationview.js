@@ -52,15 +52,12 @@ var NavigationView = React.createClass({
             {this.link('#about', 'About', null)}
             {this.link('#schedule', 'Schedule', null)}
             {this.link('#info', 'Guest Information', [{"tag": "#hotel", "text":"Hotel" }, {"tag":"#directions", "text":"Directions"}, {"tag":"#todo", "text":"Things To Do"}, {"tag":"#faq", "text":"FAQ"}])}
-            {this.link('#contact', 'Contact', [{"tag": "#rsvp", "text":"RSVP" }, {"tag":"#questions", "text":"Questions/Comments"}])}
+            {this.link('#rsvp', 'RSVP', null)}
           </ul>
         </div>
     );
     /*jshint ignore:end */
   },
-
-  componentDidMount: function() {
-  }
 });
 
 module.exports = NavigationView;

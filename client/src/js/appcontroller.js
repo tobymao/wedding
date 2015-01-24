@@ -10,7 +10,6 @@ var HotelView = require('./hotel.js');
 var DirectionsView = require('./directions.js');
 var ToDoView = require('./todo.js');
 var FAQView = require('./faq.js');
-var QuestionsView = require('./questions.js');
 
 // This is your main class
 var AppViewController = React.createClass({
@@ -34,8 +33,6 @@ var AppViewController = React.createClass({
       return <ToDoView />
     } else if (hash == '#faq') {
       return <FAQView />
-    } else if (hash == '#questions') {
-      return <QuestionsView />
     } else {
       return <HomeView />
     }
