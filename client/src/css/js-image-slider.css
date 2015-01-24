@@ -6,7 +6,7 @@
 #sliderFrame 
 {
     position:relative;
-    width:100%;
+    width:500px;
     margin:0 auto; /*center-aligned*/
 }
 
@@ -71,7 +71,7 @@
 /* ------ built-in navigation bullets wrapper ------*/
 /* Note: check themes\2\js-image-slider.css to see how to hide nav bullets */
 #slider div.navBulletsWrapper  {
-    top:320px;/* Its position is relative to the #slider */
+   top:400px;/* Its position is relative to the #slider */
 	text-align:center;
 	background:none;
 	position:relative;
@@ -139,8 +139,8 @@ a.group1-Prev, a.group1-Next
     top:0;
     user-select: none;
 }
-a.group1-Prev{background-position:0 0; left: -510px;}
-a.group1-Next {background-position:0 -150px;left:460px;}
+a.group1-Prev{background-position:0 0; left: -310px;}
+a.group1-Next {background-position:0 -150px;left:260px;}
 
 a.group1-Prev:hover{background-position:50px 0;}
 a.group1-Next:hover {background-position:50px -150px;}

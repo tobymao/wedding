@@ -5,17 +5,21 @@ var React = require('react');
 // This is your main class
 var NavigationView = React.createClass({
   link: function(tag, text, children) {
+    var self = this;
+
     /*jshint ignore:start */
     children = children || [];
 
-    var delegate = this.props.delegate;
+    var linkDidClick = function(tag) {
+      document.location.hash = tag;
+    };
 
     var subMenu = function() {
       if (children.length > 0) {
         return (
           <ul>
             {children.map(function(child, index) {
-              return <li key={index} onClick={delegate.navDidClick.bind(delegate, child.tag)}>{child.text}</li>
+              return <li key={index} onClick={linkDidClick.bind(self, child.tag)}>{child.text}</li>
             })}
           </ul>
         );
@@ -26,7 +30,7 @@ var NavigationView = React.createClass({
 
     var liClick = function(event) {
       if (!children.length) {
-        delegate.navDidClick(tag);
+        linkDidClick(tag);
       }
     };
 
@@ -47,7 +51,7 @@ var NavigationView = React.createClass({
             {this.link('#home', 'Home', null)}
             {this.link('#about', 'About', null)}
             {this.link('#schedule', 'Schedule', null)}
-            {this.link('#info', 'Guest Information', [{"tag": "#hotel", "text":"Hotel" }, {"tag":"#directions", "text":"Directions"}, {"tag":"#todo", "text":"Things To Do"}])}
+            {this.link('#info', 'Guest Information', [{"tag": "#hotel", "text":"Hotel" }, {"tag":"#directions", "text":"Directions"}, {"tag":"#todo", "text":"Things To Do"}, {"tag":"#faq", "text":"FAQ"}])}
             {this.link('#contact', 'Contact', [{"tag": "#rsvp", "text":"RSVP" }, {"tag":"#questions", "text":"Questions/Comments"}])}
           </ul>
         </div>

@@ -3,13 +3,12 @@
 
 var React = require('react');
 
-var HomeView = React.createClass({
+var HotelView = React.createClass({
   render: function() {
     /*jshint ignore:start */
     return (
       <div>
-      <p className="centerText">
-      <img src = "../wedding/img/save_the_date.jpg" height="500"/></p>
+      <p>Hotel information coming soon.</p>
       </div>
     );
     /*jshint ignore:end */
@@ -18,4 +17,4 @@ var HomeView = React.createClass({
   componentDidMount: function() {
   }
 });
-module.exports = HomeView;
+module.exports = HotelView;

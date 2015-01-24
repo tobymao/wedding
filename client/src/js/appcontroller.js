@@ -5,17 +5,17 @@ var NavigationView = require('./navigationview.js');
 var AboutView = require('./about.js');
 var HomeView = require('./home.js');
 var RSVPView = require('./rsvp.js');
+var ScheduleView = require('./schedule.js');
+var HotelView = require('./hotel.js');
+var DirectionsView = require('./directions.js');
+var ToDoView = require('./todo.js');
+var FAQView = require('./faq.js');
+var QuestionsView = require('./questions.js');
 
 // This is your main class
 var AppViewController = React.createClass({
   getInitialState: function() {
     return {hash: window.location.hash};
-  },
-
-  // Navbar Delegate
-  navDidClick: function(tag) {
-    document.location.hash = tag;
-    this.setState({hash: tag});
   },
 
   route: function(hash) {
@@ -24,6 +24,18 @@ var AppViewController = React.createClass({
       return <RSVPView />
     } else if (hash == '#about') {
       return <AboutView />
+    } else if (hash == '#schedule') {
+      return <ScheduleView />
+    } else if (hash == '#hotel') {
+      return <HotelView />
+    } else if (hash == '#directions') {
+      return <DirectionsView />
+    } else if (hash == '#todo') {
+      return <ToDoView />
+    } else if (hash == '#faq') {
+      return <FAQView />
+    } else if (hash == '#questions') {
+      return <QuestionsView />
     } else {
       return <HomeView />
     }
@@ -34,7 +46,7 @@ var AppViewController = React.createClass({
     /*jshint ignore:start */
     return (
       <div className="appViewController">
-        <NavigationView delegate={this}/> 
+        <NavigationView /> 
         {this.route(this.state.hash)}
       </div>
     );
