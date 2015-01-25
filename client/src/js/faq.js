@@ -18,7 +18,7 @@ var FAQView = React.createClass({
         <p className="question">Will you have a registry?</p>
         <p className="answer">No, we will not.</p>
         <p className="question">Will there be dancing?</p>
-        <p className="answer">Well will not have dancing at our wedding, but we are planning on having other fun activities for you to do!</p>
+        <p className="answer">We will not have dancing at our wedding, but we are planning on having other fun activities for you to do!</p>
         <p className="question">Will there be alcohol?</p>
         <p className="answer">We plan on having food (buffet) and drinks (both alcoholic and non-alcoholic) during the reception after the ceremony.</p>
       </div>
