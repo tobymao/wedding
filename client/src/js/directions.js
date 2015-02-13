@@ -25,7 +25,7 @@ var DirectionsView = React.createClass({
             <li>The recreation center is the building at the corner of Alameda de Las Pulgas and 28th Ave.</li>
           </ul>
         </div>
-        <h2>Directions to Hotel</h2>
+        <h3>Directions to Hotel</h3>
         <p>
           <b>San Mateo Marriott</b><br/>
           1770 South Amphlett Blvd<br/>
