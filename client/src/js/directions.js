@@ -8,13 +8,13 @@ var DirectionsView = React.createClass({
     /*jshint ignore:start */
     return (
       <div>
-        <h2>Directions to Venue</h2>
-        <p className="centerText">
+        <h3>Directions to Venue</h3>
+        <p>
           <b>Beresford Recreation Center</b><br/>
           2720 Alameda de las Pulgas<br/>
           San Mateo, CA 94403
         </p>
-        <div className="center">
+        <div>
           <ul>
             <li>From the hotel, head towards Concar Dr</li>
             <li>S Amphlett Blvd turns right and becomes Concar</li>
@@ -26,12 +26,12 @@ var DirectionsView = React.createClass({
           </ul>
         </div>
         <h2>Directions to Hotel</h2>
-        <p className="centerText">
+        <p>
           <b>San Mateo Marriott</b><br/>
           1770 South Amphlett Blvd<br/>
           San Mateo, CA 94402
         </p>
-        <div className="center">
+        <div>
           <ul>
             <li>Take Highway 101 North (if coming from SoCal) or 101 South (if coming from the airport or SF)</li>
             <li>From the 101, take Highway 92 going West</li>
