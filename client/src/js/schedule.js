@@ -8,9 +8,23 @@ var ScheduleView = React.createClass({
     /*jshint ignore:start */
     return (
       <div>
-      <h1>Schedule</h1>
-      <h2>Saturday, July 18<br />
-      San Mateo, CA</h2>
+        <h1>Schedule</h1>
+        <h2>Friday, July 17</h2>
+        <p className="centerText">
+          <b>Rehearsal Dinner - TBD</b><br/>
+          TBD
+        </p>
+        <h2>Saturday, July 18</h2>
+        <p className="centerText">
+          <b>Wedding ceremony - 4:30 pm </b><br/>
+          Beresford Recreation Center<br/>
+          2720 Alameda de las Pulgas<br/>
+          San Mateo, CA 94403<br/>
+        </p>
+        <p className="centerText">
+          <b>Reception - afterwards</b><br/>
+          Beresford Recreation Center (same place)
+        </p>
 
       </div>
     );
