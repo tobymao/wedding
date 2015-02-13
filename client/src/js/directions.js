@@ -14,7 +14,7 @@ var DirectionsView = React.createClass({
           2720 Alameda de las Pulgas<br/>
           San Mateo, CA 94403
         </p>
-        <p><ul>
+        <p className="centerText"><ul>
           <li>From the hotel, head towards Concar Dr</li>
           <li>S Amphlett Blvd turns right and becomes Concar</li>
           <li>Merge onto Highway 92 West (on left) toward Half Moon Bay</li>
@@ -29,7 +29,7 @@ var DirectionsView = React.createClass({
           1770 South Amphlett Blvd<br/>
           San Mateo, CA 94402
         </p>
-        <p><ul>
+        <p className="centerText"><ul>
           <li>Take Highway 101 North (if coming from SoCal) or 101 South (if coming from the airport or SF)</li>
           <li>From the 101, take Highway 92 going West</li>
           <li>Take the Delaware Street Exit (located on the right side)</li>
