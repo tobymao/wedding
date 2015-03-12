@@ -12,7 +12,7 @@ var HotelView = React.createClass({
         <p>We have a block of rooms with the <a href={"http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Valdes%20Mao%20Wedding%5Esfosa%60vamvama%60144%60USD%60false%607/17/15%607/19/15%607/3/15&app=resvlink&stop_mobi=yes"} target="_blank">San Mateo Marriott</a> for Friday and Saturday night.</p>
         <p> Rooms are either a king bed or two queens. $144 a night - including complimentary internet and $5 self parking. The hotel also has a free airport shuttle (to/from SFO).</p>
         <p>Please make your reservation <a href={"http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Valdes%20Mao%20Wedding%5Esfosa%60vamvama%60144%60USD%60false%607/17/15%607/19/15%607/3/15&app=resvlink&stop_mobi=yes"} target="_blank">here</a>. If you would like to extend your stay, please call the hotel directly at 1-800-627-7468 and tell them you are booking with the Valdes and Mao wedding. The rooms are only available until July 3, so book soon!</p>
-        <table>
+        <table className="leftTable">
           <tr>
             <td><ul>
               <li><b>Rooms Manager:</b> Lorena Ochoa</li>
@@ -28,10 +28,10 @@ var HotelView = React.createClass({
               <li><b>Group Rate:</b> $144.00</li>
               <li><b>Included in your Rate:</b> Complimentary guestroom internet and $5.00 parking fee per car for all guests and attendees</li>
               <li><b>Reservation Link:</b> <a href={"http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Valdes%20Mao%20Wedding%5Esfosa%60vamvama%60144%60USD%60false%607/17/15%607/19/15%607/3/15&app=resvlink&stop_mobi=yes"} target="_blank">Valdes Mao Wedding</a></li>
-            </ul></td>   
+            </ul></td>
           </tr>
         </table>
-        <table>
+        <table className="leftTable">
           <tr>
             <th>San Mateo Marriott</th>
           </tr>
